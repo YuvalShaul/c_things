@@ -17,19 +17,18 @@ The normal behaviour is that it **ALWAYS TRY TO LINK**, so the option is really 
 - Off course, this cannot create a complete program (func_a is missing).  
 It will create an [**object file**](https://en.wikipedia.org/wiki/Object_file) (Look for **file-with-main.o**)
 - The object file is already in a binary form, but it is not ready to run. It also contains a table of what it needs (in this case: looking for a function called func_a)
-- There is no problem with the declaration of func_a function though,  
-The file-with-main.c file includes the other.h headre file, so it knows how the function should look like.
+- The function definition is missing, but the compiler has its declaration. This is because **file-with-main.c** includes **other.h** header file.
 
-Now, let's compile the other file:
+Now, let's compile **other.c**:
 ```
 gcc -c other.c
 ```
 notes:
-- Note that we do not compile other.h directly.  
+- We do not compile other.h directly.  
 It is included in other.c
-- Again, only an object file is created (other.o)
+- As before, only an object file is created (**other.o**)
 
-**Let's link it all together:**  
+**link:**  
 ```
 gcc file-with-main.o other.o
 ```
