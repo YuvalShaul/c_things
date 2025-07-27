@@ -1,7 +1,7 @@
 ### A progran comprised of two files
 
 - The **file-with-main.c** is the main file, containing the **main** function.
-- The **other.c** file contributes a function (func_a), and there is a declaration of that function in the other.h header file.
+- The **other.c** file defines a function (func_a), and there is a declaration of that function in the other.h header file.
 
 ### How to compile
 
