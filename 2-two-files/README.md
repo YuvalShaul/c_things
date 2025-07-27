@@ -16,7 +16,7 @@ notes:
 The normal behaviour is that it **ALWAYS TRY TO LINK**, so the option is really "compile only"
 - Off course, this cannot create a complete program (func_a is missing).  
 It will create an [**object file**](https://en.wikipedia.org/wiki/Object_file) (Look for **file-with-main.o**)
-- The object file is already in a binary form, but it is not ready to run. It also contains a table of what it needs (in this case: looking for a function called func_a that will sometime needs to be found)
+- The object file is already in a binary form, but it is not ready to run. It also contains a table of what it needs (in this case: looking for a function called func_a)
 - There is no problem with the declaration of func_a function though,  
 The file-with-main.c file includes the other.h headre file, so it knows how the function should look like.
 
